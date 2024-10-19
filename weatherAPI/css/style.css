@@ -5,7 +5,41 @@
 /* Box Model Hack */
 *{
   box-sizing: border-box;
+  font-family: "Alegreya Sans", sans-serif;
+  
 }
+html {
+  background-image: url(../img/cloudsBackground.jpg);
+  background-size: auto;
+}
+
+.inputSection{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+input{
+  width: 100%;
+  text-align: center;
+  border-radius: 50%;
+  margin-top: 5%;
+}
+#tempBtn {
+  background: transparent;
+}
+
+#placetoPutTemp,
+h1,
+h3,
+p {
+  text-align: center;
+}
+/* input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+} */
 
 /******************************************
 /* LAYOUT

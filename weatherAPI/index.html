@@ -1,19 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-    	<meta charset="utf-8">
-    	<meta name="description" content="This is where your description goes">
-    	<meta name="keywords" content="one, two, three">
 
-		<title>Title in the tab</title>
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="This is where your description goes">
+	<meta name="keywords" content="one, two, three">
 
-		<!-- external CSS link -->
-		<link rel="stylesheet" href="css/normalize.css">
-		<link rel="stylesheet" href="css/style.css">
-	</head>
-	<body>
-		
+	<title>Title in the tab</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,400;0,800;0,900;1,400&display=swap"
+		rel="stylesheet">
 
-		<script type="text/javascript" src="js/main.js"></script>
-	</body>
+	<!-- external CSS link -->
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<section class="introSection">
+		<h1>Find the weather</h1>
+		<p>Enter a location (City & State --- Country) and get it's temperature!</p>
+	</section>
+	<section class="inputSection">
+		<form>
+			<input type="text" id="city" placeholder="Enter city and state" required>
+			<!-- <input type="text" id="state" placeholder="Enter state"> -->
+			<input type="text" id="country" placeholder="Enter country">
+			<input type="button" value="Get temperature" id="tempBtn">
+		</form>
+	</section>
+	<section class="resultSection">
+		<h3 id="placetoPutTemp"></h3>
+	</section>
+
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+
 </html>
