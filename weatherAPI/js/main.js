@@ -19,18 +19,18 @@ document.querySelector('#tempBtn').addEventListener('click', getMyTemp)
 
 function getMyTemp() {
 const city = document.querySelector('#city').value
-const key = '018b81049be54c6297ebbdf8c94d4016'
+const key = apiKey
 const country = document.querySelector('#country').value
 
 const url = `https://api.weatherbit.io/v2.0/current?key=${key}&city=${city}&country=${country}&units=I`
 fetch(url)
     .then(res => res.json()) // parse response as JSON 
     .then(data => {
-        console.log(data)
-        console.log(data.data)
-        console.log(data.count)
-        console.log(data.data[0].temp)
-        console.log(data.data[0].weather.description)
+        // console.log(data)
+        // console.log(data.data)
+        // console.log(data.count)
+        // console.log(data.data[0].temp)
+        // console.log(data.data[0].weather.description)
         // const parentItem = document.querySelector('.resultSection')
         // const childItem = document.createElement('h3')
         // parentItem.appendChild(childItem)
