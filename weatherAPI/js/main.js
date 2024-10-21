@@ -14,7 +14,7 @@
 //         // console.log(data.url)
 //     });
 // }
-
+import { apiKey } from "./apiKeys.js"
 document.querySelector('#tempBtn').addEventListener('click', getMyTemp)
 
 function getMyTemp() {
